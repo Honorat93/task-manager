@@ -1,0 +1,96 @@
+/* ------------------------------------------------ Conteneur principal */
+.container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+
+/* ------------------------------------------------- Titre principal */
+h1 {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px; 
+}
+
+
+
+/* --------------------------------------------------- Formulaire */
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+  transition: border-color 0.3s; 
+}
+
+input[type="text"]:focus {
+  border-color: #4e73df; 
+  outline: none; 
+}
+
+button {
+  background-color: #4e73df; 
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s; 
+}
+
+button:hover {
+  background-color: #3a4a4d; 
+}
+
+button:focus {
+  outline: none; 
+}
+
+
+/* ----------------------------------------------- Message d'erreur */
+.error {
+  color: red;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+
+
+/* -------------------------------------------------- Liste des tâches */
+.task-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px; 
+}
+
+.task-item {
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s; 
+}
+
+.task-item:hover {
+  background-color: #3a4a4d; 
+}
+
+.task-item:not(:last-child) {
+  margin-bottom: 10px; 
+}
